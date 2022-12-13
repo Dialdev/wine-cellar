@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Оферта", 
+		"/info/politica/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Лизинг", 
+		"/info/lizing/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Аренда", 
+		"/info/rent/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Рассрочка", 
+		"/info/rassrochka/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Для партнеров", 
+		"/info/partners/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

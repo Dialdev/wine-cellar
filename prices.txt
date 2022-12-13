@@ -1,0 +1,102 @@
+string(482) "
+																
+														<div class="stickers custom-font">
+						
+						
+													<div><div 345 class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+											</div>
+													"
+
+
+string(470) "
+																
+														<div class="stickers custom-font">
+						
+						
+													<div><div 345 class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+											</div>
+	"
+
+
+string(424) "<div class="stickers custom-font">
+						
+						
+													<div><div 345 class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+					"
+
+
+string(486) "<div class="stickers custom-font">
+						
+						
+													<div><div 345 class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+					<div><div class="sticker__ font_sxs rounded2">ололо</div>"
+
+
+string(504) "<div class="stickers custom-font">
+						
+						
+													<div><div 345 class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div 345 class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+											<div><div class="sticker__ font_sxs rounded2">ололо</div></div></div>"
+
+
+string(488) "<div class="stickers custom-font">
+						
+						
+													<div><div class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+											<div><div class="sticker__ font_sxs rounded2">ололо</div></div></div>"
+
+
+string(223) "<div class="stickers custom-font">
+						
+						
+													<div><div class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+											<div><div class="sticker__ font_sxs rounded2">ололо</div></div></div>"
+
+
+string(488) "<div class="stickers custom-font">
+						
+						
+													<div><div class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+											<div><div class="sticker__ font_sxs rounded2">ололо</div></div></div>"
+
+
+string(488) "<div class="stickers custom-font">
+						
+						
+													<div><div class="sticker__ font_sxs rounded2">Хит продаж</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Советуем</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Новинка</div></div>
+													<div><div class="sticker__ font_sxs rounded2">Акция</div></div>
+						
+											<div><div class="sticker__ font_sxs rounded2">ололо</div></div></div>"
+
+

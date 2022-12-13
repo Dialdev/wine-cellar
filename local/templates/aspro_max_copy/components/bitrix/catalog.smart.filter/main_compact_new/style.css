@@ -1,0 +1,11 @@
+.bx_filter.compact.new-custom .bx_filter_parameters_box.title+.bx_filter_parameters{padding-left:0px;}
+#custom-filter-outer-container .new-custom.bx_filter{position: unset;top:unset  !important;background:#fff;}
+#custom-filter-outer-container.prefixed .new-custom.bx_filter {transition:1s;position: fixed;background: #fff;top: -100px !important;z-index: 9999999999999;box-shadow: 0 1px 5px rgba(0,0,0,.136);width: auto;width: calc(100% - 271px);right: 0px;padding: 10px 20px;}
+#custom-filter-outer-container.prefixed.fixed .new-custom.bx_filter{top: 60px !important;}
+@media(min-width:768px){
+	.bx_filter .bx_filter_popup_result.right{display:none !important}
+	.filter-compact-block.swipeignore {display: block !important;}
+}
+@media(max-width:768px){
+	.filter-compact-block.swipeignore, #custom-filter-outer-container {display: none !important;}
+}

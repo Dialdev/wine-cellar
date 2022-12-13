@@ -1,0 +1,124 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+
+	#php_value display_errors 1
+	#php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	
+	# 2pop dobavka / esli netu
+	RewriteCond %{REQUEST_URI} !\?
+	RewriteCond %{REQUEST_URI} !\&
+	RewriteCond %{REQUEST_URI} !\=
+	RewriteCond %{REQUEST_URI} !\.
+	RewriteCond %{REQUEST_URI} !\/$
+	RewriteRule ^(.*[^\/])$ /$1/ [R=301,L]
+	
+	RewriteCond %{THE_REQUEST} ([^\s]*)\/{2,}(\?[^\s]*)?
+	RewriteRule (.*) %1 [R=301,L] 
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+	RewriteRule ^index\.php$ https://www.winecellar.ru/ [R=301,L]
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+	RewriteRule ^index\.html$ https://www.winecellar.ru/ [R=301,L] 
+	RewriteCond %{HTTP_HOST} ^winecellar.ru
+	RewriteRule (.*) https://www.winecellar.ru/$1 [R=301,L]
+	RewriteCond %{REQUEST_URI} !^/bitrix/
+        Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_/  https://www.winecellar.ru/catalog/vinnye_shkafy/
+	Redirect 301 /catalog/vinnye_shkafy/utsenennye_shkafy/  https://www.winecellar.ru/catalog/vinnye_shkafy/utsenennye/
+	Redirect 301 /catalog/aksessuary_dlya_kukhni/aksessuary_dlya_narezki_syra/	https://www.winecellar.ru/catalog/aksessuary_dlya_kukhni/aksessuary_dlya_syra/
+	Redirect 301 /catalog/aksessuary_dlya_kukhni/konteynery_dlya_khraneniya_produktov_1/	https://www.winecellar.ru/catalog/aksessuary_dlya_kukhni/konteynery_dlya_khraneniya_produktov/
+	Redirect 301 /catalog/aksessuary_dlya_kukhni/konteynery_plastikovye_dlya_khraneniya_produktov/	https://www.winecellar.ru/catalog/aksessuary_dlya_kukhni/konteynery_dlya_khraneniya_produktov/
+	Redirect 301 /catalog/aksessuary_dlya_kukhni/nastennye_aksessuary_dlya_kukhni/	https://www.winecellar.ru/catalog/aksessuary_dlya_kukhni/
+	Redirect 301 /catalog/aksessuary_dlya_kukhni/neobychnye_aksessuary_dlya_kukhni/	https://www.winecellar.ru/catalog/aksessuary_dlya_kukhni/
+	Redirect 301 /catalog/aksessuary_dlya_vina/aeratory_dlya_krasnogo_vina_1/	https://www.winecellar.ru/catalog/aksessuary_dlya_vina/aeratory_dlya_vina/
+	Redirect 301 /catalog/aksessuary_dlya_vina/aksessuary_dlya_lyubiteley_vina/	https://www.winecellar.ru/catalog/aksessuary_dlya_vina/
+	Redirect 301 /catalog/aksessuary_dlya_vina/aksessuary_dlya_prigotovleniya_vina/	https://www.winecellar.ru/catalog/aksessuary_dlya_vina/
+	Redirect 301 /catalog/aksessuary_dlya_vina/elektronnye_termometry_dlya_vina_1/	https://www.winecellar.ru/catalog/aksessuary_dlya_vina/termometry_dlya_vina/
+	Redirect 301 /catalog/aksessuary_dlya_vina/originalnye_podstavki_dlya_butylok/	https://www.winecellar.ru/catalog/aksessuary_dlya_vina/podstavki_dlya_butylok/
+	Redirect 301 /catalog/aksessuary_dlya_vina/podarochnye_sumki_dlya_butylki_1/	https://www.winecellar.ru/catalog/aksessuary_dlya_vina/sumki_dlya_butylok/
+	Redirect 301 /catalog/aksessuary_dlya_vina/professionalnye_aksessuary_dlya_vina/	https://www.winecellar.ru/catalog/aksessuary_dlya_vina/
+	Redirect 301 /catalog/dlya_znatokov/klyuch_dlya_stareniya_vina/	https://www.winecellar.ru/catalog/dlya_znatokov/klyuch_vina_/
+	Redirect 301 /catalog/dlya_znatokov/klyuch_dlya_vina/	https://www.winecellar.ru/catalog/dlya_znatokov/klyuch_vina_/
+	Redirect 301 /catalog/dlya_znatokov/kollektsiya_nos_vina/	https://www.winecellar.ru/catalog/dlya_znatokov/nos_vina_aromaty/
+	Redirect 301 /catalog/prochee_kholodilnoe_oborudovanie/shkafy_dlya_syra/	https://www.winecellar.ru/catalog/prochee_kholodilnoe_oborudovanie/shkafy_dlya_sozrevaniya_syra/
+	Redirect 301 /catalog/vinnye_shkafy/domashniy_kholodilnik_dlya_vina/	https://www.winecellar.ru/catalog/vinnye_shkafy/dlya-doma/
+	Redirect 301 /catalog/vinnye_shkafy/dvukhzonnye_vinnye_shkafy/	https://www.winecellar.ru/catalog/vinnye_shkafy/dvuhzonnye/
+	Redirect 301 /catalog/vinnye_shkafy/elitnye_vinnye_shkafy/	https://www.winecellar.ru/catalog/vinnye_shkafy/elitnye/
+	Redirect 301 /catalog/vinnye_shkafy/kholodilnik_dlya_vina/	https://www.winecellar.ru/catalog/vinnye_shkafy/
+	Redirect 301 /catalog/vinnye_shkafy/luchshie_vinnye_shkafy/	https://www.winecellar.ru/catalog/vinnye_shkafy/luchshie/
+	Redirect 301 /catalog/vinnye_shkafy/malenkiy_kholodilnik_dlya_vina/	https://www.winecellar.ru/catalog/vinnye_shkafy/malenkie/
+	Redirect 301 /catalog/vinnye_shkafy/mini_kholodilnik_dlya_vina/	https://www.winecellar.ru/catalog/vinnye_shkafy/mini/
+	Redirect 301 /catalog/vinnye_shkafy/monotemperaturnye_vinnye_shkafy/	https://www.winecellar.ru/catalog/vinnye_shkafy/multi-mono-temperaturnye/
+	Redirect 301 /catalog/vinnye_shkafy/multitemperaturnye_vinnye_shkafy/	https://www.winecellar.ru/catalog/vinnye_shkafy/multitemperaturnye/
+	Redirect 301 /catalog/vinnye_shkafy/tryekhzonnye_vinnye_shkafy/	https://www.winecellar.ru/catalog/vinnye_shkafy/trehzonnye/
+	Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_climadiff/	https://www.winecellar.ru/catalog/vinnye_shkafy/climadiff/
+	Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_dlya_doma/	https://www.winecellar.ru/catalog/vinnye_shkafy/dlya-doma/
+	Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_domashnie/	https://www.winecellar.ru/catalog/vinnye_shkafy/dlya-doma/
+	Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_lasommeliere/	https://www.winecellar.ru/catalog/vinnye_shkafy/lasommeliere/
+	Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_malenkie/	https://www.winecellar.ru/catalog/vinnye_shkafy/malenkie/
+	Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_uzkie/	https://www.winecellar.ru/catalog/vinnye_shkafy/uzkie/
+	Redirect 301 /catalog/vinnye_shkafy/vinnye_shkafy_vstraivaemye_malenkie/	https://www.winecellar.ru/catalog/vinnye_shkafy/vstraivaemye/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_kholodilnik/	https://www.winecellar.ru/catalog/vinnye_shkafy/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_kholodilnik_climadiff/	https://www.winecellar.ru/catalog/vinnye_shkafy/climadiff/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_kholodilnik_vstraivaemyy/	https://www.winecellar.ru/catalog/vinnye_shkafy/vstraivaemye/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_shkaf_na_12_butylok/	https://www.winecellar.ru/catalog/vinnye_shkafy/12-butylok/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_shkaf_na_6_butylok/	https://www.winecellar.ru/catalog/vinnye_shkafy/6-butylok/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_shkaf_nastolnyy/	https://www.winecellar.ru/catalog/vinnye_shkafy/nastolnye/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_shkaf_otdelno_stoyashchiy/	https://www.winecellar.ru/catalog/vinnye_shkafy/otdelnostoyashchie/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_shkaf_vstraivaemyy_pod_stoleshnitsu/	https://www.winecellar.ru/catalog/vinnye_shkafy/vstraivaemye-pod-stoleshnicu/
+	Redirect 301 /catalog/vinnye_shkafy/vinnyy_shkaf_vstroennyy_v_kukhnyu/	https://www.winecellar.ru/catalog/vinnye_shkafy/vstraivaemye-pod-stoleshnicu/
+	Redirect 301 /catalog/vinnye_shkafy/vstraivaemye_vinnye_shkafy/	https://www.winecellar.ru/catalog/vinnye_shkafy/vstraivaemye/
+	Redirect 301 /catalog/vinnye_stellazhi/vinnye_stellazhi_iz_dereva/	https://www.winecellar.ru/catalog/vinnye_stellazhi/derevyannye_vinnye_stellazhi/
+	Redirect 301 /catalog/vsye_dlya_sigar/khyumidory_sigarnye_shkafy/	https://www.winecellar.ru/catalog/vsye_dlya_sigar/
+	Redirect 301 /catalog/aksessuary_dlya_vina/aksessuary_dlya_vinnykh_shkafov/ https://www.winecellar.ru/catalog/vinnye_shkafy/aksessuary_dlya_vinnykh_shkafov/
+	Redirect 301 /catalog/aksessuary_dlya_vina/aksessuary_dlya_vinnykh_shkafov/polki_dlya_vinnykh_shkafov/ https://www.winecellar.ru/catalog/vinnye_shkafy/aksessuary_dlya_vinnykh_shkafov/polki_dlya_vinnykh_shkafov/
+	Redirect 301 /catalog/aksessuary_dlya_vina/aksessuary_dlya_vinnykh_shkafov/prochie_aksessuary_dlya_vinnykh_shkafov/ https://www.winecellar.ru/catalog/vinnye_shkafy/aksessuary_dlya_vinnykh_shkafov/prochie_aksessuary_dlya_vinnykh_shkafov/
+	Redirect 301 /catalog/aksessuary_dlya_vina/aksessuary_dlya_vinnykh_shkafov/prochie_aksessuary/ https://www.winecellar.ru/catalog/vinnye_shkafy/aksessuary_dlya_vinnykh_shkafov/prochie_aksessuary/
+        
+	# podstanovka / v konec
+	#RewriteCond %{REQUEST_URI} !(.*)/$
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+	
+	
+	# 2pop
+	# RewriteCond %{REQUEST_URI} !\?
+# RewriteCond %{REQUEST_URI} !\&
+# RewriteCond %{REQUEST_URI} !\=
+# RewriteCond %{REQUEST_URI} !\.
+# RewriteCond %{REQUEST_URI} !\/$
+# RewriteRule ^(.*[^\/])$ /$1/ [R=301,L]
+	
+	
+
+	# ASPRO_ROBOTS Serve robots.txt with robots.php only if the latter exists
+	RewriteCond %{REQUEST_FILENAME} robots.txt
+	RewriteCond %{DOCUMENT_ROOT}/robots.php -f
+	RewriteRule ^(.*)$ /robots.php [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+	DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresByType image/jpeg "access plus 3 day"
+	ExpiresByType image/gif "access plus 3 day"
+</IfModule>
